@@ -1,16 +1,54 @@
-# stock_app
+Stock App - Hexagonal Architecture
 
-A new Flutter project.
+Este proyecto es una aplicación móvil desarrollada en Flutter que implementa la arquitectura hexagonal. Utiliza Bloc para la gestión del estado y la inyección de dependencias para un código modular y mantenible.
 
-## Getting Started
+Tecnologías y herramientas
 
-This project is a starting point for a Flutter application.
+Flutter: Framework para el desarrollo de aplicaciones móviles multiplataforma.
 
-A few resources to get you started if this is your first Flutter project:
+Bloc: Patrón de gestión del estado.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Inyección de dependencias: Para desacoplar módulos y mejorar la testabilidad.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Arquitectura hexagonal: Para organizar el código de manera modular y escalable.
+
+Dart: Lenguaje de programación utilizado en Flutter.
+
+Estructura del proyecto
+
+lib/
+├── core/               # Lógica compartida y configuración
+├── features/           # Componentes de la aplicación
+├── infrastructure/     # Implementaciones de repositorios y fuentes de datos
+├── domain/             # Entidades, casos de uso y repositorios
+├── application/        # Casos de uso
+├── presentation/       # UI y Bloc
+└── main.dart           # Punto de entrada de la aplicación
+
+Instalación
+
+Clonar el repositorio:
+
+git clone git@github.com:Carl0395/stock_app_hexagonal_architecture.git
+
+Navegar al directorio del proyecto:
+
+cd stock_app_hexagonal_architecture
+
+Instalar dependencias:
+
+flutter pub get
+
+Ejecución
+
+Para ejecutar la aplicación en un emulador o dispositivo físico:
+
+flutter run
+
+Testing
+
+Para ejecutar las pruebas unitarias y de integración:
+
+flutter test
+
+
